@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="maindiv" >
+  <h3><samp id="error"></samp></h3>
+   Mile:<input id="mile" type="text" placeholder="enter value">
+   KM :<input id="km" type="text" placeholder="enter value">
+   <button id="submit" > submit</button>
+
+</div>
+
+   <script>
+    newmile=document.getElementById("mile")
+    newkm=document.getElementById("km")
+    newerror=document.getElementById("error")
+    newsub=document.getElementById("submit")
+    newsub.addEventListener("click",function()
+    {
+        if(newmile.value==="")
+        {
+            newerror.innerText="please enter the value"
+        }
+        else{
+            newerror.innerText=""
+            newkm.value=newmile.value*1.69344;
+        }
+        
+    })
+
+   </script>
+</body>
+</html>

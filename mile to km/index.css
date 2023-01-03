@@ -1,0 +1,26 @@
+.maindiv{
+    background-color: rgb(20, 110, 110);
+    height: 350px;
+    width: 300px;
+    padding: 30px;
+    margin: 90px;
+    margin-left: 220px;
+}
+.maindiv input{
+    padding: 10px;
+    margin: 30px;
+}
+.maindiv button{
+    padding: 10px;
+    margin: 30px;
+    margin-left: 120px;
+    color: rgb(20, 110, 110);
+}
+.maindiv button:hover{
+    color: rgb(252, 252, 252);
+    background-color: rgb(115, 163, 163);
+    border: none;
+}
+#error{
+    color: white;
+}
